@@ -1,6 +1,6 @@
 using System;
 
-class Nes : iConsole
+class Nes : IConsole
 {
     public string Name { get; set; }
     public string Manufacturer { get; set; }
