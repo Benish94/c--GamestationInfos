@@ -1,4 +1,4 @@
-public class XboxSeriesX
+public class XboxSeriesX : iConsole
 {
     public string Manufacturer { get; set; } = "Microsoft";
     public string Name { get; set; } = "Xbox Series X";
