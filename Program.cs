@@ -1,4 +1,2 @@
-﻿using System;
-
-PSX myPsx = new PSX("PlayStation 1", 1994, 32, "Sony");
-myPsx.ShowInfo();
+﻿Gameboy gameboy = new("Nintendo Game Boy", 1989, 8, "Nintendo");
+gameboy.ShowInfo();
