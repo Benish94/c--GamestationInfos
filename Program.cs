@@ -1,5 +1,2 @@
-PlayStation4 ps4 = new("PlayStation 4", 2013, 64, "Sony");
-ps4.ShowInfo();
-
-Nes nesInstance = new Nes("Nintendo Entertainment System", "Nintendo", 1983, 8);
-nesInstance.ShowInfo();
+﻿Gameboy gameboy = new("Nintendo Game Boy", 1989, 8, "Nintendo");
+gameboy.ShowInfo();
