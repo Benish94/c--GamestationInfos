@@ -1,0 +1,14 @@
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.userosscache
+*.sln.doccache
+*.userprefs
+.vs/
+.idea/
+.vscode/
+*.swp
+*.bak
+*.tmp
+*.log
