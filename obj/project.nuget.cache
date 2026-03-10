@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ZTQb9d0pR2U=",
+  "dgSpecHash": "SYVoMYHU6mY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ben\\Documents\\VSCode\\Gamestation-Info\\Gamestation-Info.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/malliw/git_repos/c--GamestationInfos/Gamestation-Info.csproj",
+  "expectedPackageFiles": [
+    "/home/malliw/.nuget/packages/microsoft.netcore.app.ref/8.0.24/microsoft.netcore.app.ref.8.0.24.nupkg.sha512",
+    "/home/malliw/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.24/microsoft.aspnetcore.app.ref.8.0.24.nupkg.sha512",
+    "/home/malliw/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.24/microsoft.netcore.app.host.linux-x64.8.0.24.nupkg.sha512"
+  ],
   "logs": []
 }

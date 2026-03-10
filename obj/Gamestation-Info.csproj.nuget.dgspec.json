@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ben\\Documents\\VSCode\\Gamestation-Info\\Gamestation-Info.csproj": {}
+    "/home/malliw/git_repos/c--GamestationInfos/Gamestation-Info.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ben\\Documents\\VSCode\\Gamestation-Info\\Gamestation-Info.csproj": {
+    "/home/malliw/git_repos/c--GamestationInfos/Gamestation-Info.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ben\\Documents\\VSCode\\Gamestation-Info\\Gamestation-Info.csproj",
+        "projectUniqueName": "/home/malliw/git_repos/c--GamestationInfos/Gamestation-Info.csproj",
         "projectName": "Gamestation-Info",
-        "projectPath": "C:\\Users\\Ben\\Documents\\VSCode\\Gamestation-Info\\Gamestation-Info.csproj",
-        "packagesPath": "C:\\Users\\Ben\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ben\\Documents\\VSCode\\Gamestation-Info\\obj\\",
+        "projectPath": "/home/malliw/git_repos/c--GamestationInfos/Gamestation-Info.csproj",
+        "packagesPath": "/home/malliw/.nuget/packages/",
+        "outputPath": "/home/malliw/git_repos/c--GamestationInfos/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ben\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/malliw/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,12 +55,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.24, 8.0.24]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.24, 8.0.24]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.24, 8.0.24]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
