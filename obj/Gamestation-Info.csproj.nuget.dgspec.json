@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ben\\Documents\\VSCode\\Gamestation-Info\\Gamestation-Info.csproj": {}
+    "C:\\Users\\MIka\\Documents\\Gamestation-info\\Gamestation-Info.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ben\\Documents\\VSCode\\Gamestation-Info\\Gamestation-Info.csproj": {
+    "C:\\Users\\MIka\\Documents\\Gamestation-info\\Gamestation-Info.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ben\\Documents\\VSCode\\Gamestation-Info\\Gamestation-Info.csproj",
+        "projectUniqueName": "C:\\Users\\MIka\\Documents\\Gamestation-info\\Gamestation-Info.csproj",
         "projectName": "Gamestation-Info",
-        "projectPath": "C:\\Users\\Ben\\Documents\\VSCode\\Gamestation-Info\\Gamestation-Info.csproj",
-        "packagesPath": "C:\\Users\\Ben\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ben\\Documents\\VSCode\\Gamestation-Info\\obj\\",
+        "projectPath": "C:\\Users\\MIka\\Documents\\Gamestation-info\\Gamestation-Info.csproj",
+        "packagesPath": "C:\\Users\\MIka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MIka\\Documents\\Gamestation-info\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ben\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MIka\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -54,6 +54,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.24, 8.0.24]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.24, 8.0.24]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.24, 8.0.24]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.24, 8.0.24]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
