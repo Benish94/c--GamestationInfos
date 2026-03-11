@@ -8,5 +8,10 @@ var consoles = JsonSerializer.Deserialize<List<Konsole>>(json);
 foreach (var console in consoles)
 {
     console.ShowInfo();
+}
+
+
+foreach (var console in consoles)
+{
     ((IStockManager)console).ShowStock();
 }

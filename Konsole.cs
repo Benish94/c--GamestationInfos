@@ -8,12 +8,11 @@ public class Konsole : IConsole, IStockManager
     public int Bit { get; set; }
     public string Manufacturer { get; set; }
 
-    [JsonIgnore]
-    private int _stock = 100;
-    int IStockManager.Stock { get => _stock; set => _stock = value; }
+    public int Stock { get; set; } = 100;
+    int IStockManager.Stock { get => Stock; set => Stock = value; }
     void IStockManager.ShowStock()
     {
-        Console.WriteLine($"Aktueller Lagerbestand: {_stock} Stück");
+        Console.WriteLine($"Aktueller Lagerbestand von Konsole {Name}: {Stock} Stück");
     }
 
     public void ShowInfo()
