@@ -1,4 +1,4 @@
-List<IConsoleProduct> consoles = [];
+List<Konsole> consoles = [];
 consoles.Add(new Gameboy());
 consoles.Add(new Nes());
 consoles.Add(new SNES());
@@ -11,7 +11,7 @@ consoles.Add(new SegaMegaDrive2());
 
 Console.WriteLine("---Konsolen Infos---\n");
 
-foreach(IConsoleProduct console in consoles)
+foreach(Konsole console in consoles)
 {
     console.ShowInfo();
     console.ShowStock();

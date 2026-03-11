@@ -1,21 +1,8 @@
-public class SNES : IConsoleProduct
+public class SNES : Konsole
 {
-    public string Name { get; } = "Super Nintendo Entertainment System";
-    public int ReleaseYear { get; } = 1990;
-    public int Bit { get; } = 16;
-    public string Manufacturer { get; } = "Nintendo";
-    public int Stock { get; set; } = 60;
-
-    public void ShowInfo()
-    {
-        Console.WriteLine("Name: " + Name);
-        Console.WriteLine("Erscheinungsjahr: " + ReleaseYear);
-        Console.WriteLine("Bit: " + Bit);
-        Console.WriteLine("Hersteller: " + Manufacturer);
-    }
-
-    public void ShowStock()
-    {
-        Console.WriteLine("Lagerbestand: " + Stock);
-    }
+    public override string Name { get; } = "Super Nintendo Entertainment System";
+    public override int ReleaseYear { get; } = 1990;
+    public override int Bit { get; } = 16;
+    public override string Manufacturer { get; } = "Nintendo";
+    public override int Stock { get; set; } = 60;
 }

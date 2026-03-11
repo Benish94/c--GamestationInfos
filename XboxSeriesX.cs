@@ -1,21 +1,8 @@
-public class XboxSeriesX : IConsoleProduct
+public class XboxSeriesX : Konsole
 {
-    public string Name { get; } = "Xbox Series X";
-    public int ReleaseYear { get; } = 2020;
-    public int Bit { get; } = 64;
-    public string Manufacturer { get; } = "Microsoft";
-    public int Stock { get; set; } = 33;
-
-    public void ShowInfo()
-    {
-        Console.WriteLine("Name: " + Name);
-        Console.WriteLine("Erscheinungsjahr: " + ReleaseYear);
-        Console.WriteLine("Bit: " + Bit);
-        Console.WriteLine("Hersteller: " + Manufacturer);
-    }
-
-    public void ShowStock()
-    {
-        Console.WriteLine("Lagerbestand: " + Stock);
-    }
+    public override string Name { get; } = "Xbox Series X";
+    public override int ReleaseYear { get; } = 2020;
+    public override int Bit { get; } = 64;
+    public override string Manufacturer { get; } = "Microsoft";
+    public override int Stock { get; set; } = 33;
 }

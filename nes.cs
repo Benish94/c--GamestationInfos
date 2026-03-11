@@ -1,23 +1,8 @@
-using System;
-
-class Nes : IConsoleProduct
+public class Nes : Konsole
 {
-    public string Name { get; } = "Nintendo Entertainment System";
-    public string Manufacturer { get; } = "Nintendo";
-    public int ReleaseYear { get; } = 1985;
-    public int Bit { get; } = 8;
-    public int Stock { get; set; } = 55;
-
-    public void ShowInfo()
-    {
-        Console.WriteLine("Name: " + Name);
-        Console.WriteLine("Erscheinungsjahr: " + ReleaseYear);
-        Console.WriteLine("Bit: " + Bit);
-        Console.WriteLine("Hersteller: " + Manufacturer);
-    }
-
-    public void ShowStock()
-    {
-        Console.WriteLine("Lagerbestand: " + Stock);
-    }
+    public override string Name { get; } = "Nintendo Entertainment System";
+    public override int ReleaseYear { get; } = 1985;
+    public override int Bit { get; } = 8;
+    public override string Manufacturer { get; } = "Nintendo";
+    public override int Stock { get; set; } = 55;
 }

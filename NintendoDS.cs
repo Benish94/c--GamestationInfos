@@ -1,21 +1,8 @@
-public class NintendoDS : IConsoleProduct
+public class NintendoDS : Konsole
 {
-    public string Name { get; } = "Nintendo DS";
-    public int ReleaseYear { get; } = 2004;
-    public int Bit { get; } = 32;
-    public string Manufacturer { get; } = "Nintendo";
-    public int Stock { get; set; } = 27;
-
-    public void ShowInfo()
-    {
-        Console.WriteLine("Name: " + Name);
-        Console.WriteLine("Erscheinungsjahr: " + ReleaseYear);
-        Console.WriteLine("Bit: " + Bit);
-        Console.WriteLine("Hersteller: " + Manufacturer);
-    }
-
-    public void ShowStock()
-    {
-        Console.WriteLine("Lagerbestand: " + Stock);
-    }
+    public override string Name { get; } = "Nintendo DS";
+    public override int ReleaseYear { get; } = 2004;
+    public override int Bit { get; } = 32;
+    public override string Manufacturer { get; } = "Nintendo";
+    public override int Stock { get; set; } = 27;
 }
