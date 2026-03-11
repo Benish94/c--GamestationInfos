@@ -2,24 +2,16 @@ using System;
 
 class Nes : IConsole
 {
-    public string Name { get; set; }
-    public string Manufacturer { get; set; }
-    public int ReleaseYear { get; set; }
-    public int Bit { get; set; }
-
-    public Nes(string name, string manufacturer, int releaseYear, int bit)
-    {
-        Name = name;
-        ReleaseYear = releaseYear;
-        Bit = bit;
-        Manufacturer = manufacturer;
-    }
+    public string Name { get; } = "Nintendo Entertainment System";
+    public string Manufacturer { get; } = "Nintendo";
+    public int ReleaseYear { get; } = 1985;
+    public int Bit { get; } = 8;
 
     public void ShowInfo()
     {
         Console.WriteLine("Name: " + Name);
-        Console.WriteLine("Hersteller: " + Manufacturer);
         Console.WriteLine("Erscheinungsjahr: " + ReleaseYear);
         Console.WriteLine("Bit: " + Bit);
+        Console.WriteLine("Hersteller: " + Manufacturer);
     }
 }

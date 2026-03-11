@@ -1,13 +1,15 @@
 public class XboxSeriesX : IConsole
 {
-    public string Manufacturer { get; set; } = "Microsoft";
-    public string Name { get; set; } = "Xbox Series X";
-    public int ReleaseYear { get; set; } = 2020;
+    public string Name { get; } = "Xbox Series X";
+    public int ReleaseYear { get; } = 2020;
+    public int Bit { get; } = 64;
+    public string Manufacturer { get; } = "Microsoft";
 
     public void ShowInfo()
     {
-        Console.WriteLine($"Manufacturer: {Manufacturer}");
-        Console.WriteLine($"Name: {Name}");
-        Console.WriteLine($"Release Year: {ReleaseYear}");
+        Console.WriteLine("Name: " + Name);
+        Console.WriteLine("Erscheinungsjahr: " + ReleaseYear);
+        Console.WriteLine("Bit: " + Bit);
+        Console.WriteLine("Hersteller: " + Manufacturer);
     }
 }
