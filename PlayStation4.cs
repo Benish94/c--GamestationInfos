@@ -1,6 +1,6 @@
 using System;
 
-class PlayStation4 : iConsole
+class PlayStation4 : IConsole
 {
     public string Name { get; set; }
     public int ReleaseYear { get; set; }

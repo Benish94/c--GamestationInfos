@@ -1,6 +1,6 @@
 namespace RetroKonsole;
 
-public class NintendoDS : iConsole
+public class NintendoDS : IConsole
 {
     public string Name { get; set; }
     public int ReleaseYear { get; set; }
