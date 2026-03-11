@@ -1,19 +1,22 @@
-List<Konsole> consoles = [];
-consoles.Add(new Gameboy());
-consoles.Add(new Nes());
-consoles.Add(new SNES());
-consoles.Add(new NintendoDS());
-consoles.Add(new PlayStation4());
-consoles.Add(new PSX());
-consoles.Add(new XboxSeriesX());
-consoles.Add(new SegaMegaDrive());
-consoles.Add(new SegaMegaDrive2());
-
 Console.WriteLine("---Konsolen Infos---\n");
 
-foreach(Konsole console in consoles)
+foreach (KonsolenName name in Enum.GetValues<KonsolenName>())
 {
+    Konsole console = new(name);
     console.ShowInfo();
     console.ShowStock();
     Console.WriteLine("\n");
+}
+
+public enum KonsolenName
+{
+    Gameboy,
+    Nes,
+    SNES,
+    NintendoDS,
+    PlayStation4,
+    PSX,
+    XboxSeriesX,
+    SegaMegaDrive,
+    SegaMegaDrive2
 }
