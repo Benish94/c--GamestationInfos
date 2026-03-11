@@ -2,18 +2,12 @@ using System;
 
 class Gameboy : IConsole
 {
-    public string Name { get; set; }
-    public int ReleaseYear { get; set; }
-    public int Bit { get; set; }
-    public string Manufacturer { get; set; }
-
-    public Gameboy(string name, int releaseYear, int bit, string manufacturer)
-    {
-        Name = name;
-        ReleaseYear = releaseYear;
-        Bit = bit;
-        Manufacturer = manufacturer;
-    }
+    public string Name { get; set; } = "Gameboy";
+    public int ReleaseYear { get; set; } = 1989;
+    public int Bit { get; set; } = 8;
+    public string Manufacturer { get; set; } = "Nintendo";
+    private int stock = 100;
+   
 
     public void ShowInfo()
     {
@@ -27,4 +21,8 @@ class Gameboy : IConsole
         Console.WriteLine("{0,-15} {1}", "Manufacturer:", Manufacturer);
         Console.WriteLine("");
     }
-}
+    public void ShowStock()
+    {
+        Console.WriteLine("Aktueller Lagerbestand: {0} Stück", stock);
+    }
+}   

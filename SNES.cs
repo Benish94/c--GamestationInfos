@@ -1,23 +1,29 @@
-public class SNES : IConsole
-{
-    public string Name { get; set; }
-    public int ReleaseYear { get; set; }
-    public int Bit { get; set; }
-    public string Manufacturer { get; set; }
+using System;
 
-    public SNES(string name, int releaseYear, int bit, string manufacturer)
-    {
-        Name = name;
-        ReleaseYear = releaseYear;
-        Bit = bit;
-        Manufacturer = manufacturer;
-    }
+class SNES : IConsole
+{
+    public string Name { get; set; } = "Super Nintendo Entertainment System";
+    public int ReleaseYear { get; set; } = 1990;
+    public int Bit { get; set; } = 16;
+    public string Manufacturer { get; set; } = "Nintendo";
+
+    private int stock = 100;
 
     public void ShowInfo()
     {
-        Console.WriteLine($"Name: {Name}");
-        Console.WriteLine($"Release Year: {ReleaseYear}");
-        Console.WriteLine($"Bit: {Bit}");
-        Console.WriteLine($"Manufacturer: {Manufacturer}");
+        Console.WriteLine("");
+        Console.WriteLine("Informationen zur Konsole:");
+        Console.WriteLine("----------------------------------------");
+        Console.WriteLine("");
+        Console.WriteLine("{0,-15} {1}", "Name:", Name);
+        Console.WriteLine("{0,-15} {1}", "Release Year:", ReleaseYear);
+        Console.WriteLine("{0,-15} {1}", "Bit:", Bit);
+        Console.WriteLine("{0,-15} {1}", "Manufacturer:", Manufacturer);
+        Console.WriteLine("");
+    }
+
+    public void ShowStock()
+    {
+        Console.WriteLine("Aktueller Lagerbestand: {0} Stück", stock);
     }
 }

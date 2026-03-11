@@ -1,32 +1,29 @@
 using System;
-using System.Reflection.Metadata;
 
+class PSX : IConsole
+{
+    public string Name { get; set; } = "PlayStation";
+    public int ReleaseYear { get; set; } = 1994;
+    public int Bit { get; set; } = 32;
+    public string Manufacturer { get; set; } = "Sony";
 
+    private int stock = 100;
 
-       public class PSX : IConsole
+    public void ShowInfo()
     {
-    
-        public string Name;
-        public int ReleaseYear;
-        public int Bit;
-        public string Manufacturer;
-
-        public PSX(string name, int year, int bit, string manufacturer)
-        {
-            Name = "PlayStation 1";
-            ReleaseYear = 1994;
-            Bit = 32;
-            Manufacturer = "Sony";
-        } 
-        public void ShowInfo()
-    {
-        Console.WriteLine($"Name: {Name}");
-        Console.WriteLine($"Release Year: {ReleaseYear}");
-        Console.WriteLine($"Bit: {Bit}");
-        Console.WriteLine($"Manufacturer: {Manufacturer}");
+        Console.WriteLine("");
+        Console.WriteLine("Informationen zur Konsole:");
+        Console.WriteLine("----------------------------------------");
+        Console.WriteLine("");
+        Console.WriteLine("{0,-15} {1}", "Name:", Name);
+        Console.WriteLine("{0,-15} {1}", "Release Year:", ReleaseYear);
+        Console.WriteLine("{0,-15} {1}", "Bit:", Bit);
+        Console.WriteLine("{0,-15} {1}", "Manufacturer:", Manufacturer);
+        Console.WriteLine("");
     }
 
+    public void ShowStock()
+    {
+        Console.WriteLine("Aktueller Lagerbestand: {0} Stück", stock);
     }
-  
-    
-      
+}
