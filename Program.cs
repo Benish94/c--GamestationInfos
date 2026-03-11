@@ -9,7 +9,7 @@ consolen.Add(new XboxSeriesX());
 consolen.Add(new SegaMegaDrive());
 consolen.Add(new SegaMegaDrive2());
 
-Console.WriteLine("Cosnolen infos:");
+Console.WriteLine("---Konsolen Infos---\n");
 
 foreach(IConsole console in consolen)
 {
