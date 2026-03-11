@@ -1,17 +1,17 @@
-List<IConsole> consolen = [];
-consolen.Add(new Gameboy());
-consolen.Add(new Nes());
-consolen.Add(new SNES());
-consolen.Add(new NintendoDS());
-consolen.Add(new PlayStation4());
-consolen.Add(new PSX());
-consolen.Add(new XboxSeriesX());
-consolen.Add(new SegaMegaDrive());
-consolen.Add(new SegaMegaDrive2());
+List<IConsole> consoles = [];
+consoles.Add(new Gameboy());
+consoles.Add(new Nes());
+consoles.Add(new SNES());
+consoles.Add(new NintendoDS());
+consoles.Add(new PlayStation4());
+consoles.Add(new PSX());
+consoles.Add(new XboxSeriesX());
+consoles.Add(new SegaMegaDrive());
+consoles.Add(new SegaMegaDrive2());
 
 Console.WriteLine("---Konsolen Infos---\n");
 
-foreach(IConsole console in consolen)
+foreach(IConsole console in consoles)
 {
     console.ShowInfo();
     Console.WriteLine("\n");
