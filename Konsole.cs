@@ -1,4 +1,4 @@
-public abstract class Konsole : IConsoleProduct
+public abstract class Konsole : IConsole, IStockManager
 {
     public abstract string Name { get; }
     public abstract int ReleaseYear { get; }
