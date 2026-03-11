@@ -4,6 +4,7 @@ public class NintendoDS : IConsole
     public int ReleaseYear { get; } = 2004;
     public int Bit { get; } = 32;
     public string Manufacturer { get; } = "Nintendo";
+    public int Stock { get; set; } = 27;
 
     public void ShowInfo()
     {
@@ -13,4 +14,8 @@ public class NintendoDS : IConsole
         Console.WriteLine("Hersteller: " + Manufacturer);
     }
 
+    public void ShowStock()
+    {
+        Console.WriteLine("Lagerbestand: " + Stock);
+    }
 }

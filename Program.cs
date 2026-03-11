@@ -14,5 +14,6 @@ Console.WriteLine("---Konsolen Infos---\n");
 foreach(IConsole console in consoles)
 {
     console.ShowInfo();
+    console.ShowStock();
     Console.WriteLine("\n");
 }

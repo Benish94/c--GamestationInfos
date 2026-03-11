@@ -4,6 +4,7 @@ public class SNES : IConsole
     public int ReleaseYear { get; } = 1990;
     public int Bit { get; } = 16;
     public string Manufacturer { get; } = "Nintendo";
+    public int Stock { get; set; } = 60;
 
     public void ShowInfo()
     {
@@ -11,5 +12,10 @@ public class SNES : IConsole
         Console.WriteLine("Erscheinungsjahr: " + ReleaseYear);
         Console.WriteLine("Bit: " + Bit);
         Console.WriteLine("Hersteller: " + Manufacturer);
+    }
+
+    public void ShowStock()
+    {
+        Console.WriteLine("Lagerbestand: " + Stock);
     }
 }
