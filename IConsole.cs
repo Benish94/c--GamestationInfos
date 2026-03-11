@@ -1,4 +1,4 @@
-public interface    IConsole
+public interface IConsole
 {
     void ShowInfo();
 }
