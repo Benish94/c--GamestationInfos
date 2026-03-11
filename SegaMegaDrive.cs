@@ -7,7 +7,6 @@ public class SegaMegaDrive : IConsole
     public int Bit { get; } = 16;
     public string Manufacturer { get; } = "Sega";
     public int Stock { get; set; } = 88;
-    public int Stock { get; set; } = 88;
 
     public void ShowInfo()
     {
@@ -15,11 +14,6 @@ public class SegaMegaDrive : IConsole
         Console.WriteLine("Erscheinungsjahr: " + ReleaseYear);
         Console.WriteLine("Bit: " + Bit);
         Console.WriteLine("Hersteller: " + Manufacturer);
-    }
-    
-    public void ShowStock()
-    {
-        Console.WriteLine("Lagerbestand: " + Stock);
     }
     
     public void ShowStock()

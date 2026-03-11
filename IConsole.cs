@@ -4,6 +4,8 @@ public interface IConsole
     int ReleaseYear { get; }
     int Bit { get; }
     string Manufacturer { get; }
+    int Stock { get; set; }
 
     void ShowInfo();
+    void ShowStock();
 }

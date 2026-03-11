@@ -9,12 +9,11 @@ consoles.Add(new XboxSeriesX());
 consoles.Add(new SegaMegaDrive());
 consoles.Add(new SegaMegaDrive2());
 
-Console.WriteLine("---Konsolen Infos---\n");
-
 foreach(IConsole console in consoles)
 {
     Console.WriteLine("Konsoleninformationen");
     Console.WriteLine("----------------");
     console.ShowInfo();
+    console.ShowStock();
     Console.WriteLine();
 }
