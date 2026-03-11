@@ -28,6 +28,8 @@ public class Konsole : IConsole, IStockManager
                 Name = "Sega Mega Drive"; ReleaseYear = 1988; Bit = 16; Manufacturer = "Sega"; Stock = 42; break;
             case KonsolenName.SegaMegaDrive2:
                 Name = "Sega Mega Drive 2"; ReleaseYear = 1988; Bit = 16; Manufacturer = "Sega"; Stock = 18; break;
+            default:
+                throw new ArgumentException("Unbekannte Konsole: " + name);
         }
     }
 
