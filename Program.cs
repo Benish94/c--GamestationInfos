@@ -13,6 +13,8 @@ Console.WriteLine("---Konsolen Infos---\n");
 
 foreach(IConsole console in consoles)
 {
+    Console.WriteLine("Konsoleninformationen");
+    Console.WriteLine("----------------");
     console.ShowInfo();
     Console.WriteLine();
 }
