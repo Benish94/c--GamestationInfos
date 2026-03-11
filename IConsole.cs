@@ -1,5 +1,5 @@
 
-using Gamestation_Info;
+using GameStationInfo;
 
 public interface IConsole : IStockManager
 {

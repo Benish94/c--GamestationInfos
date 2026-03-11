@@ -1,4 +1,4 @@
-namespace Gamestation_Info
+namespace GameStationInfo
 {
     public interface IStockManager
     {
