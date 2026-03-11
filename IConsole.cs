@@ -1,9 +1,11 @@
 public interface IConsole
 {
-    string Name { get; set; }
-    int ReleaseYear { get; set; }
-    int Bit { get; set; }
-    string Manufacturer { get; set; }
+    string Name { get; }
+    int ReleaseYear { get; }
+    int Bit { get; }
+    string Manufacturer { get; }
+    int Stock { get; set; }
+ 
     void ShowInfo();
     void ShowStock();
 }

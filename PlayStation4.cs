@@ -1,25 +1,23 @@
 using System;
-
-class PlayStation4 : IConsole
+ 
+public class PlayStation4 : IConsole
 {
-    public string Name { get; set; }
-    public int ReleaseYear { get; set; }
-    public int Bit { get; set; }
-    public string Manufacturer { get; set; }
-
-    public PlayStation4(string name, int releaseYear, int bit, string manufacturer)
-    {
-        Name = name;
-        ReleaseYear = releaseYear;
-        Bit = bit;
-        Manufacturer = manufacturer;
-    }
-
+    public string Name { get; } = "PlayStation 4";
+    public int ReleaseYear { get; } = 2013;
+    public int Bit { get; } = 64;
+    public string Manufacturer { get; } = "Sony";
+    public int Stock { get; set; } = 88;
+ 
     public void ShowInfo()
     {
         Console.WriteLine("Name: " + Name);
         Console.WriteLine("Erscheinungsjahr: " + ReleaseYear);
         Console.WriteLine("Bit: " + Bit);
         Console.WriteLine("Hersteller: " + Manufacturer);
+    }
+   
+    public void ShowStock()
+    {
+        Console.WriteLine("Lagerbestand: " + Stock);
     }
 }

@@ -1,21 +1,20 @@
-﻿using RetroKonsole;
-
-List<IConsole> consoles = new()
+﻿List<IConsole> consoles = [];
+consoles.Add(new Gameboy());
+consoles.Add(new Nes());
+consoles.Add(new SNES());
+consoles.Add(new NintendoDS());
+consoles.Add(new PlayStation4());
+consoles.Add(new PSX());
+consoles.Add(new XboxSeriesX());
+consoles.Add(new SegaMegaDrive());
+consoles.Add(new SegaMegaDrive2());
+ 
+ 
+foreach(IConsole console in consoles)
 {
-    new Gameboy(),
-    new Nes(),
-    new SNES(),
-    new NintendoDS(),
-    new PSX(),
-    new PlayStation4(),
-    new SegaMegaDrive2(),
-    new XboxSeriesX(),
-};
-
-foreach (IConsole console in consoles)
-{
+    Console.WriteLine("Konsoleninformationen");
+    Console.WriteLine("----------------");
     console.ShowInfo();
+    console.ShowStock();
+    Console.WriteLine();
 }
-
-Gameboy gameboy = new Gameboy();
-gameboy.ShowStock();
