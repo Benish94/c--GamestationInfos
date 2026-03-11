@@ -1,13 +1,30 @@
-public class XboxSeriesX : IConsole
+using System;
+
+public class XboxSeriesX : IConsole, IStockManager
 {
-    public string Manufacturer { get; set; } = "Microsoft";
     public string Name { get; set; } = "Xbox Series X";
     public int ReleaseYear { get; set; } = 2020;
+    public int Bit { get; set; } = 64;
+    public string Manufacturer { get; set; } = "Microsoft";
+
+    private int _stock = 100;
+    int IStockManager.Stock { get => _stock; set => _stock = value; }
+
+    void IStockManager.ShowStock()
+    {
+        Console.WriteLine("Aktueller Lagerbestand: {0} Stück", _stock);
+    }
 
     public void ShowInfo()
     {
-        Console.WriteLine($"Manufacturer: {Manufacturer}");
-        Console.WriteLine($"Name: {Name}");
-        Console.WriteLine($"Release Year: {ReleaseYear}");
+        Console.WriteLine("");
+        Console.WriteLine("Infromationen zur Konsole:");
+        Console.WriteLine("--------------------------------------------------");
+        Console.WriteLine("");
+        Console.WriteLine("{0,-15} {1}", "Name:", Name);
+        Console.WriteLine("{0,-15} {1}", "Release Year:", ReleaseYear);
+        Console.WriteLine("{0,-15} {1}", "Bit:", Bit);
+        Console.WriteLine("{0,-15} {1}", "Manufacturer:", Manufacturer);
+        Console.WriteLine("");
     }
 }

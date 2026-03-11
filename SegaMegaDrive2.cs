@@ -1,11 +1,30 @@
-public class SegaMegaDrive2 : IConsole
+using System;
+
+public class SegaMegaDrive2 : IConsole, IStockManager
 {
+    public string Name { get; set; } = "Sega Mega Drive 2";
+    public int ReleaseYear { get; set; } = 1993;
+    public int Bit { get; set; } = 16;
+    public string Manufacturer { get; set; } = "Sega";
+
+    private int _stock = 100;
+    int IStockManager.Stock { get => _stock; set => _stock = value; }
+
+    void IStockManager.ShowStock()
+    {
+        Console.WriteLine("Aktueller Lagerbestand: {0} Stück", _stock);
+    }
+
     public void ShowInfo()
     {
-        Console.WriteLine("Informationen zur Konsole:");
-        Console.WriteLine("Name: Sega Mega Drive");
-        Console.WriteLine("ReleaseYear: 1988");
-        Console.WriteLine("Bit: 16");
-        Console.WriteLine("Manufacturer: Sega");
+        Console.WriteLine("");
+        Console.WriteLine("Infromationen zur Konsole:");
+        Console.WriteLine("--------------------------------------------------");
+        Console.WriteLine("");
+        Console.WriteLine("{0,-15} {1}", "Name:", Name);
+        Console.WriteLine("{0,-15} {1}", "Release Year:", ReleaseYear);
+        Console.WriteLine("{0,-15} {1}", "Bit:", Bit);
+        Console.WriteLine("{0,-15} {1}", "Manufacturer:", Manufacturer);
+        Console.WriteLine("");
     }
 }

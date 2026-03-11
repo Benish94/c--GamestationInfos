@@ -1,25 +1,30 @@
 using System;
 
-class Nes : IConsole
+class Nes : IConsole, IStockManager
 {
-    public string Name { get; set; }
-    public string Manufacturer { get; set; }
-    public int ReleaseYear { get; set; }
-    public int Bit { get; set; }
+    public string Name { get; set; } = "Nintendo Entertainment System";
+    public int ReleaseYear { get; set; } = 1983;
+    public int Bit { get; set; } = 8;
+    public string Manufacturer { get; set; } = "Nintendo";
 
-    public Nes(string name, string manufacturer, int releaseYear, int bit)
+    private int _stock = 100;
+    int IStockManager.Stock { get => _stock; set => _stock = value; }
+
+    void IStockManager.ShowStock()
     {
-        Name = name;
-        ReleaseYear = releaseYear;
-        Bit = bit;
-        Manufacturer = manufacturer;
+        Console.WriteLine("Aktueller Lagerbestand: {0} Stück", _stock);
     }
 
     public void ShowInfo()
     {
-        Console.WriteLine("Name: " + Name);
-        Console.WriteLine("Hersteller: " + Manufacturer);
-        Console.WriteLine("Erscheinungsjahr: " + ReleaseYear);
-        Console.WriteLine("Bit: " + Bit);
+        Console.WriteLine("");
+        Console.WriteLine("Infromationen zur Konsole:");
+        Console.WriteLine("--------------------------------------------------");
+        Console.WriteLine("");
+        Console.WriteLine("{0,-15} {1}", "Name:", Name);
+        Console.WriteLine("{0,-15} {1}", "Release Year:", ReleaseYear);
+        Console.WriteLine("{0,-15} {1}", "Bit:", Bit);
+        Console.WriteLine("{0,-15} {1}", "Manufacturer:", Manufacturer);
+        Console.WriteLine("");
     }
 }

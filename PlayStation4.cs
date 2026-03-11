@@ -1,25 +1,30 @@
 using System;
 
-class PlayStation4 : IConsole
+class PlayStation4 : IConsole, IStockManager
 {
-    public string Name { get; set; }
-    public int ReleaseYear { get; set; }
-    public int Bit { get; set; }
-    public string Manufacturer { get; set; }
+    public string Name { get; set; } = "PlayStation 4";
+    public int ReleaseYear { get; set; } = 2013;
+    public int Bit { get; set; } = 64;
+    public string Manufacturer { get; set; } = "Sony";
 
-    public PlayStation4(string name, int releaseYear, int bit, string manufacturer)
+    private int _stock = 100;
+    int IStockManager.Stock { get => _stock; set => _stock = value; }
+
+    void IStockManager.ShowStock()
     {
-        Name = name;
-        ReleaseYear = releaseYear;
-        Bit = bit;
-        Manufacturer = manufacturer;
+        Console.WriteLine("Aktueller Lagerbestand: {0} Stück", _stock);
     }
 
     public void ShowInfo()
     {
-        Console.WriteLine("Name: " + Name);
-        Console.WriteLine("Erscheinungsjahr: " + ReleaseYear);
-        Console.WriteLine("Bit: " + Bit);
-        Console.WriteLine("Hersteller: " + Manufacturer);
+        Console.WriteLine("");
+        Console.WriteLine("Infromationen zur Konsole:");
+        Console.WriteLine("--------------------------------------------------");
+        Console.WriteLine("");
+        Console.WriteLine("{0,-15} {1}", "Name:", Name);
+        Console.WriteLine("{0,-15} {1}", "Release Year:", ReleaseYear);
+        Console.WriteLine("{0,-15} {1}", "Bit:", Bit);
+        Console.WriteLine("{0,-15} {1}", "Manufacturer:", Manufacturer);
+        Console.WriteLine("");
     }
 }

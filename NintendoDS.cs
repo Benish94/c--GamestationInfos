@@ -1,25 +1,30 @@
-namespace RetroKonsole;
+using System;
 
-public class NintendoDS : IConsole
+public class NintendoDS : IConsole, IStockManager
 {
-    public string Name { get; set; }
-    public int ReleaseYear { get; set; }
-    public int Bit { get; set; }
-    public string Manufacturer { get; set; }
+    public string Name { get; set; } = "Nintendo DS";
+    public int ReleaseYear { get; set; } = 2004;
+    public int Bit { get; set; } = 32;
+    public string Manufacturer { get; set; } = "Nintendo";
 
-    public NintendoDS(string name, int releaseYear, int bit, string manufacturer)
+    private int _stock = 100;
+    int IStockManager.Stock { get => _stock; set => _stock = value; }
+
+    void IStockManager.ShowStock()
     {
-        Name = name;
-        ReleaseYear = releaseYear;
-        Bit = bit;
-        Manufacturer = manufacturer;
+        Console.WriteLine("Aktueller Lagerbestand: {0} Stück", _stock);
     }
+
     public void ShowInfo()
     {
-        Console.WriteLine("Name: " + Name);
-        Console.WriteLine("Erscheinungsjahr: " + ReleaseYear);
-        Console.WriteLine("Bit: " + Bit);
-        Console.WriteLine("Hersteller: " + Manufacturer);
+        Console.WriteLine("");
+        Console.WriteLine("Infromationen zur Konsole:");
+        Console.WriteLine("--------------------------------------------------");
+        Console.WriteLine("");
+        Console.WriteLine("{0,-15} {1}", "Name:", Name);
+        Console.WriteLine("{0,-15} {1}", "Release Year:", ReleaseYear);
+        Console.WriteLine("{0,-15} {1}", "Bit:", Bit);
+        Console.WriteLine("{0,-15} {1}", "Manufacturer:", Manufacturer);
+        Console.WriteLine("");
     }
-
 }
