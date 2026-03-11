@@ -1,30 +1,20 @@
-﻿using RetroKonsole;
+﻿using System.Text.Json;
 
-List<IConsole> consoles = new List<IConsole>()
-{
-    // new Gameboy(),
-    // new Nes("Nintendo Entertainment System", "Nintendo", 1983, 8),
-    // new SNES("Super Nintendo Entertainment System", 1990, 16, "Nintendo"),
-    new NintendoDS(),
-//     new PSX("PlayStation 1", 1994, 32, "Sony"),
-//     new PlayStation4("PlayStation 4", 2013, 64, "Sony"),
-//     new SegaMegaDrive2(),
-//     new XboxSeriesX(),
-//
-};
+string json = File.ReadAllText("Dictionary.json");
+Dictionary<string, Konsole>? konsolen = JsonSerializer.Deserialize<Dictionary<string, Konsole>>(json);
 
-foreach (IConsole console in consoles)
+if (konsolen is null)
 {
-    console.ShowInfo();
+    Console.WriteLine("Fehler beim Laden der Konsoleninformationen.");
+    return;
 }
 
-List<IStockManager> stockManagers = new List<IStockManager>()
+foreach (KeyValuePair<string, Konsole> eintrag in konsolen)
 {
-    new NintendoDS(),
-};
+    IConsole console = eintrag.Value;
+    IStockManager stockManager = eintrag.Value;
 
-foreach (IStockManager stockManager in stockManagers)
-{
+    console.ShowInfo();
     stockManager.ShowStock();
-    Console.WriteLine("Bestand: " + stockManager.Stock);
+    Console.WriteLine();
 }

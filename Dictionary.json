@@ -1,0 +1,72 @@
+﻿{
+  "NintendoDS": {
+    "Name": "Nintendo DS",
+    "ReleaseYear": 2004,
+    "Bit": 32,
+    "Manufacturer": "Nintendo",
+    "Stock": 100
+  },
+  "Gameboy": {
+    "Name": "Game Boy",
+    "ReleaseYear": 1989,
+    "Bit": 8,
+    "Manufacturer": "Nintendo",
+    "Stock": 85
+  },
+  "NES": {
+    "Name": "Nintendo Entertainment System",
+    "ReleaseYear": 1983,
+    "Bit": 8,
+    "Manufacturer": "Nintendo",
+    "Stock": 40
+  },
+  "SNES": {
+    "Name": "Super Nintendo Entertainment System",
+    "ReleaseYear": 1990,
+    "Bit": 16,
+    "Manufacturer": "Nintendo",
+    "Stock": 35
+  },
+  "PSX": {
+    "Name": "PlayStation",
+    "ReleaseYear": 1994,
+    "Bit": 32,
+    "Manufacturer": "Sony",
+    "Stock": 60
+  },
+  "PS4": {
+    "Name": "PlayStation 4",
+    "ReleaseYear": 2013,
+    "Bit": 64,
+    "Manufacturer": "Sony",
+    "Stock": 55
+  },
+  "SegaMegaDrive": {
+    "Name": "Sega Mega Drive",
+    "ReleaseYear": 1988,
+    "Bit": 16,
+    "Manufacturer": "Sega",
+    "Stock": 25
+  },
+  "SegaMegaDrive2": {
+    "Name": "Sega Mega Drive 2",
+    "ReleaseYear": 1993,
+    "Bit": 16,
+    "Manufacturer": "Sega",
+    "Stock": 20
+  },
+  "XboxSeriesX": {
+    "Name": "Xbox Series X",
+    "ReleaseYear": 2020,
+    "Bit": 64,
+    "Manufacturer": "Microsoft",
+    "Stock": 30
+  },
+  "NintendoSwitch": {
+    "Name": "Nintendo Switch",
+    "ReleaseYear": 2017,
+    "Bit": 64,
+    "Manufacturer": "Nintendo",
+    "Stock": 75
+  }
+}
