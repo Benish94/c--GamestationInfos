@@ -1,6 +1,6 @@
 using System;
 
-class PlayStation4 : IConsole
+class PlayStation4 : IConsoleProduct
 {
     public string Name { get; } = "PlayStation 4";
     public int ReleaseYear { get; } = 2013;

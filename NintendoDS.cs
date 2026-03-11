@@ -1,4 +1,4 @@
-public class NintendoDS : IConsole
+public class NintendoDS : IConsoleProduct
 {
     public string Name { get; } = "Nintendo DS";
     public int ReleaseYear { get; } = 2004;

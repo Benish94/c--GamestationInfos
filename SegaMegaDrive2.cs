@@ -1,4 +1,4 @@
-public class SegaMegaDrive2 : IConsole
+public class SegaMegaDrive2 : IConsoleProduct
 {
     public string Name { get; } = "Sega Mega Drive";
     public int ReleaseYear { get; } = 1988;

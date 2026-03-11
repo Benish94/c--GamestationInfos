@@ -1,6 +1,6 @@
 using System;
 
-class Gameboy : IConsole
+class Gameboy : IConsoleProduct
 {
     public string Name { get; } = "Nintendo Game Boy";
     public int ReleaseYear { get; } = 1989;

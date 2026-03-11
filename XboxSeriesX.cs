@@ -1,4 +1,4 @@
-public class XboxSeriesX : IConsole
+public class XboxSeriesX : IConsoleProduct
 {
     public string Name { get; } = "Xbox Series X";
     public int ReleaseYear { get; } = 2020;

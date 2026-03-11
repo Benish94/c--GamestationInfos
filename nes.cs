@@ -1,6 +1,6 @@
 using System;
 
-class Nes : IConsole
+class Nes : IConsoleProduct
 {
     public string Name { get; } = "Nintendo Entertainment System";
     public string Manufacturer { get; } = "Nintendo";

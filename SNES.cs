@@ -1,4 +1,4 @@
-public class SNES : IConsole
+public class SNES : IConsoleProduct
 {
     public string Name { get; } = "Super Nintendo Entertainment System";
     public int ReleaseYear { get; } = 1990;

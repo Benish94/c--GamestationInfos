@@ -1,6 +1,6 @@
 using System;
 
-public class PSX : IConsole
+public class PSX : IConsoleProduct
 {
     public string Name { get; } = "PlayStation 1";
     public int ReleaseYear { get; } = 1994;
