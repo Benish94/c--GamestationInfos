@@ -1,4 +1,4 @@
-List<IConsole> consoles = [];
+﻿List<IConsole> consoles = [];
 consoles.Add(new Gameboy());
 consoles.Add(new Nes());
 consoles.Add(new SNES());
@@ -14,5 +14,5 @@ Console.WriteLine("---Konsolen Infos---\n");
 foreach(IConsole console in consoles)
 {
     console.ShowInfo();
-    Console.WriteLine("\n");
+    Console.WriteLine();
 }
