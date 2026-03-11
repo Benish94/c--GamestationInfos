@@ -2,8 +2,8 @@
 using Gamestation_Info;
 
 
-var json = File.ReadAllText("consoles.json");
-var consoles = JsonSerializer.Deserialize<List<Konsole>>(json);
+string json = File.ReadAllText("consoles.json");
+List<Konsole>? consoles = JsonSerializer.Deserialize<List<Konsole>>(json);
 
 if (consoles == null)
 {
