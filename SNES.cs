@@ -1,18 +1,16 @@
 public class SNES : IConsole
 {
-    public string Name { get; set; }
-    public int ReleaseYear { get; set; }
-    public int Bit { get; set; }
-    public string Manufacturer { get; set; }
+    public string Name { get; } = "Super Nintendo";
+    public int ReleaseYear { get; } = 1234;
+    public int Bit { get; } = 3;
+    public string Manufacturer { get; } = "Nintendo";
 
-    public SNES(string name, int releaseYear, int bit, string manufacturer)
+    public int Stock { get; set; } = 100;
+
+    public void ShowStock()
     {
-        Name = name;
-        ReleaseYear = releaseYear;
-        Bit = bit;
-        Manufacturer = manufacturer;
+        Console.WriteLine("Stock: " + Stock);
     }
-
     public void ShowInfo()
     {
         Console.WriteLine($"Name: {Name}");

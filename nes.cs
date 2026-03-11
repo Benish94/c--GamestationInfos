@@ -1,18 +1,18 @@
 using System;
+using Gamestation_Info;
 
 class Nes : IConsole
 {
-    public string Name { get; set; }
-    public string Manufacturer { get; set; }
-    public int ReleaseYear { get; set; }
-    public int Bit { get; set; }
+    public string Name { get; } = "Nintendo Entertainment System";
+    public string Manufacturer { get; } = "Nintendo";
+    public int ReleaseYear { get; } = 1983;
+    public int Bit { get; } = 8;
 
-    public Nes(string name, string manufacturer, int releaseYear, int bit)
+    public int Stock { get; set; } = 100;
+
+    public void ShowStock()
     {
-        Name = name;
-        ReleaseYear = releaseYear;
-        Bit = bit;
-        Manufacturer = manufacturer;
+        Console.WriteLine("Stock: " + Stock);
     }
 
     public void ShowInfo()

@@ -2,19 +2,17 @@ using System;
 
 class PlayStation4 : IConsole
 {
-    public string Name { get; set; }
-    public int ReleaseYear { get; set; }
-    public int Bit { get; set; }
-    public string Manufacturer { get; set; }
+    public string Name { get; } = "PlayStation 4";
+    public int ReleaseYear { get; } = 2070;
+    public int Bit { get; } = 42;
+    public string Manufacturer { get; } = "Sony";
 
-    public PlayStation4(string name, int releaseYear, int bit, string manufacturer)
+    public int Stock { get; set; } = 100;
+
+    public void ShowStock()
     {
-        Name = name;
-        ReleaseYear = releaseYear;
-        Bit = bit;
-        Manufacturer = manufacturer;
+        Console.WriteLine("Stock: " + Stock);
     }
-
     public void ShowInfo()
     {
         Console.WriteLine("Name: " + Name);

@@ -2,18 +2,12 @@ using System;
 
 class Gameboy : IConsole
 {
-    public string Name { get; set; }
-    public int ReleaseYear { get; set; }
-    public int Bit { get; set; }
-    public string Manufacturer { get; set; }
+    public string Name { get; } = "Gameboy";
+    public int ReleaseYear { get; } = 1989;
+    public int Bit { get; } = 8;
+    public string Manufacturer { get; } = "Nintendo";
 
-    public Gameboy(string name, int releaseYear, int bit, string manufacturer)
-    {
-        Name = name;
-        ReleaseYear = releaseYear;
-        Bit = bit;
-        Manufacturer = manufacturer;
-    }
+    public int Stock { get; set; } = 100;
 
     public void ShowInfo()
     {
@@ -26,5 +20,10 @@ class Gameboy : IConsole
         Console.WriteLine("{0,-15} {1}", "Bit:", Bit);
         Console.WriteLine("{0,-15} {1}", "Manufacturer:", Manufacturer);
         Console.WriteLine("");
+    }
+
+    public void ShowStock()
+    {
+        Console.WriteLine("Stock: " + Stock);
     }
 }
