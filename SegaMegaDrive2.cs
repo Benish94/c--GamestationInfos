@@ -1,4 +1,4 @@
-public class SegaMegaDrive2 : iConsole
+public class SegaMegaDrive2 : IConsole
 {
     public void ShowInfo()
     {

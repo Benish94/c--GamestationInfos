@@ -1,4 +1,4 @@
-public class SNES : iConsole
+public class SNES : IConsole
 {
     public string Name { get; set; }
     public int ReleaseYear { get; set; }
