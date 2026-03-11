@@ -9,9 +9,9 @@ public class PSX : IConsole
 
     public void ShowInfo()
     {
-        Console.WriteLine("Name: " + Name);
-        Console.WriteLine("Erscheinungsjahr: " + ReleaseYear);
-        Console.WriteLine("Bit: " + Bit);
-        Console.WriteLine("Hersteller: " + Manufacturer);
+        Console.WriteLine("{0,-15} {1}", "Name: " + Name);
+        Console.WriteLine("{0,-15} {1}", "Erscheinungsjahr: " + ReleaseYear);
+        Console.WriteLine("{0,-15} {1}", "Bit: " + Bit);
+        Console.WriteLine("{0,-15} {1}", "Hersteller: " + Manufacturer);
     }
 }
