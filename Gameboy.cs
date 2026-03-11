@@ -1,6 +1,6 @@
 using System;
 
-class Gameboy : iConsole
+class Gameboy : IConsole
 {
     public string Name { get; set; }
     public int ReleaseYear { get; set; }
